@@ -1,0 +1,107 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <meta charset="UTF-8">
+      <meta name="description" content="jQuery Generic Validation">
+      <meta name="keywords" content="HTML,CSS,Bootstrap,JavaScript">
+      <meta name="author" content="Sameer">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+      <title>Generic Form </title>
+   </head>
+   <body>
+      <img src="assets/images/girl.png" style="height:auto; width:100%; margin-top: -8px; margin-right: -8px;">
+      <form name="form" method="post" action="" >
+         <table>
+            <!-- Nav bar content -->
+            <nav class="navbar navbar-default">
+               <div class="container-fluid">
+                  <div class="navbar-header"><b>Application Form:
+                  </div>
+               </div>
+            </nav>
+            <!-- Name,Email,Password code -->
+            <tr>
+               <td>Name: </td>
+               <td> <input type="text" id="name" name="fullname"  placeholder="Full Name" class="formcontrol"><br><span id="nameerror"></span></td>
+            </tr>
+            <tr>
+               <td>Email:</td>
+               <td> <input type="text" id="email"  placeholder="eg:xyz@gmail.com" class="formcontrol"  ><br><span id="emailerror"></span></td>
+            </tr>
+            <tr>
+               <td>Password:</td>
+               <td> <input type="password" placeholder="eg:Example@123" name="pass" class="formcontrol" id="pwd" ><br><span id="pwderror"></span></td>
+            </tr>
+            <tr>
+               <!--   Qualification details -->
+               <td>Qualification:</td>
+               <td>
+                  <select input type="dropdown"  name="qual" id="qualification" class="formcontrol"  >
+                     <option value="">Select</option>
+                     <option value="inter">SSC/Intermediate</option>
+                     <option value="ug">B.Tech/Degree</option>
+                     <option value="pg">MCA/M.Tech</option>
+                     <option value="others">Others</option>
+                  </select>
+                  <br> 
+                  <span id="qualificationerror"></span>
+               </td>
+            </tr>
+            <!-- Gender and Course contents -->
+            <tr>
+               <td>Gender:</td>
+               <td> <input type="radio" name="gen" class="formcontrol" id="maleid" checked >male
+                  <input type="radio" name="gen" id="femaleid" >female<br><span id="gendererror"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>Course:</td>
+               <td><input type="checkbox" name="course" class="formcontrol" id="front" >Front end
+                  <input type="checkbox" name="course" id="back" >Back end<br>
+                  <span id="courseerror"></span>
+               </td>
+            </tr>
+            <!--  Technologies and  options -->
+            <tr>
+               <td>Technologies:</td>
+               <td>
+                  <select  name="techno" id="tech" size="4" multiple="multiple"  class="formcontrol" >
+                     <option value="html">HTML&CSS</option>
+                     <option value="boot">Bootstrap</option>
+                     <option value="js">JavaScript/Jquery</option>
+                     <option value="php">PHP/Android</option>
+                     <option value="data">MySQL/Oracle</option>
+                  </select>
+                  <br><span id="techerror"></span>
+               </td>
+            </tr>
+            <!-- Comments text area code -->
+            <tr>
+               <td>Comments:</td>
+               <td><textarea rows="5" cols="34" id="text" class="form-control" style="resize:none;" ></textarea><br>
+                  <span id="texterror"></span>
+               </td>
+            </tr>
+            <!--   Date details -->
+            <tr>
+               <td>Date</td>
+               <td>
+                  <input type="date"  id="dateid" class="formcontrol" ><br><span id="dateerror" ></span>
+               </td>
+            </tr>
+            <!--  Checkbox code for Privacy policy -->
+            <tr>
+               <td>
+                  <input type="checkbox" name="final" style="margin-left:70px;" value="" class="formcontrol" id="terms" >
+               </td>
+               <td style="margin-left:-80px">I Agree to Privacy Policy<br><span id="termserror"></span></td>
+            </tr>
+         </table>
+         <!--  Submit button code -->
+         <input type="submit"  id="sub" value="Submit">
+      </form>
+   </body>
+   <script type="text/javascript" src="assets/js/script.js"></script> 
+</html>
+
